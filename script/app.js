@@ -87,7 +87,7 @@ const handleModal = async (id) =>{
 const showModal = (data) =>{
      const modalData = document.getElementById('modalData');
      modalData.innerHTML = `
-        <div class="flex gap-4  ">
+        <div class="flex flex-col lg:flex-row gap-4  ">
          <div class="border-2 space-y-4 border-red-600 p-3 bg-red-300">
           <h1 class="font-bold text-[22px] pb-4">${data.description}</h1>
 

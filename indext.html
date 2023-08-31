@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI HUB </title>
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon">
+    <!--  tailwind and daisyui link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"rel="stylesheet"/>
+    <!--  google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+       .font{
+        font-family: 'Work Sans', sans-serif;
+       }
+    </style>
+</head>
+<body class="font">
+    <header class="text-center pt-4">
+      <h1 class="text-4xl font-bold">AI Universe Hub</h1>
+      <button class="btn mt-4 bg-red-500 hover:bg-red-500 text-white">Sort By Date</button>
+    </header>
+    <main class="container mx-auto pb-8">
+       <section id="aiCardContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        </section>
+        <!--  loading spiner  -->
+         <div class="text-center mt-8 text-orange-400 hidden " id="spinerLoader">
+            <span class="loading loading-bars w-[100px]  loading-lg"></span>
+         </div>
+        <!-- show modal  -->
+        <section>
+           <!-- You can open the modal using ID.showModal() method -->
+          <dialog id="myModal" class=" py-9 ">
+            <form method="dialog" class=" w-9/12 mx-auto    bg-gray-100 ">
+              <button class="btn btn-sm bg-red-500  hover:bg-red-500 rounded-full p-2  absolute right-2 top-2">✕</button>
+               <div id="modalData">
+               </div>
+            </form>
+          </dialog>
+        </section>
+    </main>
+  
+    <!--  js link here  -->
+    <script src="script/app.js"></script>
+</body>
+</html>
